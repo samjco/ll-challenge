@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- WP_HEAD() START -->
+    <title>Challenge</title>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Inter:500,600,700,900,regular,|Inter:500,600,700,regular,">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:500,600,700,900,regular,|Inter:500,600,700,regular,">
+    <link rel="stylesheet" id="menu-image-css" href="files/addons/menu-image/includes/css/menu-image.css?ver=3.11" type="text/css" media="all">
+    <link rel="stylesheet" id="dashicons-css" href="files/css/dashicons.min.css?ver=6.4.3" type="text/css" media="all">
+    <link rel="stylesheet" id="oxygen-css" href="files/css/oxygen.css?ver=4.8.1" type="text/css" media="all">
+    <link rel="stylesheet" id="aos-css" href="files/addons/aos/aos.css?ver=6.4.3" type="text/css" media="all">
+    <script type="text/javascript" src="files/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+    <link rel="stylesheet" id="cache-12-css" href="files/css/12.css?cache=1710486341#038;ver=6.4.3" type="text/css" media="all">
+    <link rel="stylesheet" id="cache-custom-styles-css" href="files/css/universal.css?cache=1710486339#038;ver=6.4.3" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
+    <link rel="stylesheet" href="files/addons/ws-form-pro/wsform.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+            var selector = "#_header",
+                scrollval = parseInt("200");
+            if (!scrollval || scrollval < 1) {
+                jQuery("body").css("margin-top", jQuery(selector).outerHeight());
+                jQuery(selector).addClass("oxy-sticky-header-active");
+            } else {
+                var scrollTopOld = 0;
+                jQuery(window).scroll(function() {
+                    if (!jQuery('body').hasClass('oxy-nav-menu-prevent-overflow')) {
+                        if (jQuery(this).scrollTop() > scrollval) {
+                            if (
+                                !jQuery(selector).hasClass("oxy-sticky-header-active")) {
+                                if (jQuery(selector).css('position') != 'absolute') {
+                                    jQuery("body").css("margin-top", jQuery(selector).outerHeight());
+                                }
+                                jQuery(selector)
+                                    .addClass("oxy-sticky-header-active")
+                            }
+                        } else {
+                            jQuery(selector)
+                                .removeClass("oxy-sticky-header-fade-in")
+                                .removeClass("oxy-sticky-header-active");
+                            if (jQuery(selector).css('position') != 'absolute') {
+                                jQuery("body").css("margin-top", "");
+                            }
+                        }
+                        scrollTopOld = jQuery(this).scrollTop();
+                    }
+                })
+            }
+        });
+
+    </script>
+
+<style>
+    .ct-FontAwesomeicon-arrow-circle-o-down {
+        width: 0.85714285714286em
+    }
+
+    .ct-FontAwesomeicon-twitter {
+        width: 0.92857142857143em
+    }
+
+    .ct-FontAwesomeicon-facebook {
+        width: 0.57142857142857em
+    }
+
+    .ct-FontAwesomeicon-instagram {
+        width: 0.85714285714286em
+    }
+</style>
+
+    <!-- END OF WP_HEAD() -->
+</head>
+
+<body class="home page-template-default page page-id-73  wp-embed-responsive oxygen-body">
+    <header id="_header" class="oxy-header-wrapper oxy-sticky-header oxy-overlay-header oxy-header header_section">
+        <div id="_header_row" class="oxy-header-row header_row_2">
+            <div class="oxy-header-container">
+                <div id="_header_left-1499-12" class="oxy-header-left"><img id="image-logo_id" alt="" src="files/uploads/asset-0.svg" class="ct-image main_logo" sizes="(max-width: 106px) 100vw, 106px"></div>
+                <div id="_header_center-1501-12" class="oxy-header-center">
+                    <div id="-pro-menu" class="oxy-pro-menu ">
+                        <div class="oxy-pro-menu-mobile-open-icon  oxy-pro-menu-off-canvas-trigger oxy-pro-menu-off-canvas-left" data-off-canvas-alignment="left">
+                            <svg id="-pro-menu-open-icon">
+                                <use xlink:href="#Lineariconsicon-menu"></use>
+                            </svg>
+                        </div>
+
+
+                        <div class="oxy-pro-menu-container  oxy-pro-menu-dropdown-links-visible-on-mobile oxy-pro-menu-dropdown-links-toggle" data-aos-duration="400" data-oxy-pro-menu-dropdown-animation="fade-up" data-oxy-pro-menu-dropdown-animation-duration="0.4" data-entire-parent-toggles-dropdown="true"
+                        data-oxy-pro-menu-off-canvas-animation="fade" data-oxy-pro-menu-dropdown-links-on-mobile="toggle">
+
+                            <div class="menu-main-container">
+                                <ul id="menu-main" class="oxy-pro-menu-list">
+                                    <li id="menu-item-67" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-67">
+                                      <a href="#Home" class="menu-image-title-after menu-image-hovered">
+                                        <span class="menu-image-hover-wrapper">
+                                          <img width="20" height="20" src="files/uploads/Home.svg" class="menu-image menu-image-title-after" alt="" decoding="async" loading="lazy">
+                                          <img width="20" height="20" src="files/uploads/Home.svg" class="hovered-image menu-image-title-after" alt="" style="margin-left: -20px;" decoding="async" loading="lazy">
+                                        </span>
+                                        <span class="menu-image-title-after menu-image-title">Home</span>
+                                      </a>
+                                    </li>
+                                    <li id="menu-item-68" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-68">
+                                      <a href="#Records" class="menu-image-title-after menu-image-hovered">
+                                        <span class="menu-image-hover-wrapper">
+                                          <img width="21" height="20" src="files/uploads/Record.svg" class="menu-image menu-image-title-after" alt="" decoding="async" loading="lazy">
+                                          <img width="21" height="20" src="files/uploads/Record.svg" class="hovered-image menu-image-title-after" alt="" style="margin-left: -21px;" decoding="async" loading="lazy">
+                                        </span>
+                                        <span class="menu-image-title-after menu-image-title">Records</span>
+                                      </a>
+                                    </li>
+                                    <li id="menu-item-69" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-69">
+                                      <a href="#Music" class="menu-image-title-after menu-image-hovered">
+                                        <span class="menu-image-hover-wrapper">
+                                          <img width="21" height="20" src="files/uploads/Music-Note.svg" class="menu-image menu-image-title-after" alt="" decoding="async" loading="lazy">
+                                          <img width="21" height="20" src="files/uploads/Music-Note.svg" class="hovered-image menu-image-title-after" alt="" style="margin-left: -21px;" decoding="async" loading="lazy">
+                                        </span>
+                                        <span class="menu-image-title-after menu-image-title">Music</span>
+                                      </a>
+                                    </li>
+                                    <li id="menu-item-70" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-70">
+                                      <a href="#Artists" class="menu-image-title-after menu-image-hovered">
+                                        <span class="menu-image-hover-wrapper">
+                                          <img width="21" height="20" src="files/uploads/People.svg" class="menu-image menu-image-title-after" alt="" decoding="async" loading="lazy">
+                                          <img width="21" height="20" src="files/uploads/People.svg" class="hovered-image menu-image-title-after" alt="" style="margin-left: -21px;" decoding="async" loading="lazy">
+                                        </span>
+                                        <span class="menu-image-title-after menu-image-title">Artists</span>
+                                      </a>
+                                    </li>
+                                    <li id="menu-item-71" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-71">
+                                      <a href="#Concerts" class="menu-image-title-after menu-image-hovered">
+                                        <span class="menu-image-hover-wrapper">
+                                          <img width="20" height="20" src="files/uploads/Calendar.svg" class="menu-image menu-image-title-after" alt="" decoding="async" loading="lazy">
+                                          <img width="20" height="20" src="files/uploads/asset-5.svg" class="hovered-image menu-image-title-after" alt="" style="margin-left: -20px;" decoding="async" loading="lazy">
+                                        </span>
+                                        <span class="menu-image-title-after menu-image-title">Concerts</span>
+                                      </a>
+                                    </li>
+                                  </ul>
+                            </div>
+                            <div class="oxy-pro-menu-mobile-close-icon">
+                                <svg id="svg--pro-menu">
+                                    <use xlink:href="#Lineariconsicon-cross"></use>
+                                </svg>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <script type="text/javascript">
+                        jQuery('#-pro-menu .oxy-pro-menu-show-dropdown .menu-item-has-children > a', 'body').each(function() {
+                            jQuery(this).append('<div class="oxy-pro-menu-dropdown-icon-click-area"><svg class="oxy-pro-menu-dropdown-icon"><use xlink:href="#FontAwesomeicon-arrow-circle-o-down"><\/use><\/svg><\/div>');
+                        });
+                        jQuery('#-pro-menu .oxy-pro-menu-show-dropdown .menu-item:not(.menu-item-has-children) > a', 'body').each(function() {
+                            jQuery(this).append('<div class="oxy-pro-menu-dropdown-icon-click-area"><\/div>');
+                        });
+                    </script>
+                </div>
+                <div id="_header_right-1503-12" class="oxy-header-right"><a id="" class="ct-link-button btn_sign_up" target="_self">Signup</a></div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section id="" class=" ct-section hero_section">
+        <div class="ct-section-inner-wrap">
+            <div id="hero_block" class="ct-div-block">
+                <div id="" class="ct-div-block hero_headline_block">
+                    <div id="code_div_1" class="ct-code-block">
+                        <div class="now playing" id="music">
+                            <span class="bar n1">A</span>
+                            <!--   <span class="bar n2">B</span>  
+                            <span class="bar n3">c</span> -->
+                            <span class="bar n4">D</span>
+                            <span class="bar n5">E</span>
+                            <span class="bar n6">F</span>
+                            <span class="bar n7">G</span>
+                            <span class="bar n8">H</span>
+                        </div>
+                        <!-- <button class="killbutton" onclick="toggle(this)">(Kill the Joy.)</button> -->
+                    </div>
+                    <h1 id="" class="ct-headline hero_headline text_white">A.M. Paradox</h1>
+                    <div id="" class="ct-text-block hero_headline_text text_white">Christopher Brent Wood, better known by his stage name Brent Faiyaz, is an American singer and record producer. He released his debut project, an extended play entitled A.M. Paradox, in 2016.</div>
+                    <div id="" class="ct-new-columns play_cols">
+                        <div id="" class="ct-div-block hero_headline_play_div">
+                            <a id="link-play" class="ct-link" href="#" rel="onclick=toggle(this)"><img id="" alt="" src="files/uploads/asset-6.svg" class="ct-image hero_headline_play_icon" sizes="(max-width: 20px) 100vw, 20px"></a>
+                        </div>
+                        <div id="" class="ct-div-block "><a id="" class="ct-link-text hero_headline_play_text text_white" href="#">Watch Video</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="" class=" ct-section section_base bg_white">
+        <div class="ct-section-inner-wrap">
+            <div id="_section_about-cols" class="ct-new-columns section_about_cols">
+                <div id="_section_about_col-1" class="ct-div-block section_about_col_1"></div>
+                <div id="" class="ct-div-block section_about_col_2">
+                    <div id="" class="ct-div-block about_col_text_block">
+                        <h2 id="" class="ct-headline about_headine text_dark margin20b">Brent Faiyaz, So Far Gone</h2>
+                        <div id="" class="ct-text-block about_text margin20b">Faiyaz began uploading his music onto SoundCloud in 2014 and moved from his hometown Columbia, Maryland to Charlotte, North Carolina before ultimately settling in Los Angeles, California to further his music career. On January
+                            19, 2015, he released his debut single "Allure". On June 1, 2016, Faiyaz released "Invite Me", the lead single from his upcoming debut EP. On September 19, 2016, his 21st birthday, the EP entitled A.M. Paradox was released
+                            and received with positive reviews from music critics. On January 26, 2017, Sonder released their debut EP Into.</div>
+                        <a id="link_button-104-12" class="ct-link-button btn_sign_up" href="#" target="_self">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section-93-12" class=" ct-section section_base bg_grey">
+        <div class="ct-section-inner-wrap">
+            <h3 id="" class="ct-headline about_headine release_headline text_dark">New Releases<br></h3>
+            <div id="" class="ct-text-block release_text">New albums every single month, check out the newest &amp; best from
+                <br>Snyder Recording artist, now available on Apple Music &amp; Spotify.</div>
+        </div>
+    </section>
+    <section id="" class=" ct-section bg_grey section_base_nor padding75b">
+        <div class="ct-section-inner-wrap">
+            <div id="" class="ct-div-block oxel_dynamicslider">
+                <!-- <div id="code_block-560-12" class="ct-code-block">
+
+
+                </div> -->
+                <div id="" class="ct-div-block swiper-container oxel_dynamicslider__container">
+                    <div id="_dynamic_list-562-12" class="oxy-dynamic-list swiper-wrapper">
+                        <div id="" class="ct-div-block swiper-slide">
+                            <div id="new_columns-596-12-1" class="ct-new-columns slider_sl_block" data-id="new_columns-596-12">
+                                <div id="div_block-597-12-1" class="ct-div-block slider_sl_feat_img_block" data-id="div_block-597-12"><img id="image-598-12-1" alt="" src="files/uploads/71RLkNIuZNL._SY355_-300x300.jpg" class="ct-image slider_sl_feat_img" srcset="files/uploads/71RLkNIuZNL._SY355_-300x300.jpg 300w, files/uploads/71RLkNIuZNL._SY355_-150x150.jpg 150w"
+                                    sizes="(max-width: 300px) 100vw, 300px" data-id="image-598-12"></div>
+                                <div id="div_block-599-12-1" class="ct-div-block slider_sl_feat_text_block" data-id="div_block-599-12">
+                                    <h1 id="headline-600-12-1" class="ct-headline slider_sl_header" data-id="headline-600-12"><span id="span-601-12-1" class="ct-span" data-id="span-601-12">Trapsoul Vol. 1</span></h1>
+                                    <div id="" class="ct-text-block slider_sl_author"><span id="span-603-12-1" class="ct-span" data-id="span-603-12">digilulu.com</span></div>
+                                    <div id="" class="ct-text-block slider_sl_content"><span id="" class="ct-span oxy-stock-content-styles"><p>Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1.</p></span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="" class="ct-div-block swiper-slide">
+                            <div id="new_columns-596-12-2" class="ct-new-columns slider_sl_block" data-id="new_columns-596-12">
+                                <div id="div_block-597-12-2" class="ct-div-block slider_sl_feat_img_block" data-id="div_block-597-12"><img id="image-598-12-2" alt="" src="files/uploads/71RLkNIuZNL._SY355_-300x300.jpg" class="ct-image slider_sl_feat_img" srcset="files/uploads/71RLkNIuZNL._SY355_-300x300.jpg 300w, files/uploads/71RLkNIuZNL._SY355_-150x150.jpg 150w"
+                                    sizes="(max-width: 300px) 100vw, 300px" data-id="image-598-12"></div>
+                                <div id="div_block-599-12-2" class="ct-div-block slider_sl_feat_text_block" data-id="div_block-599-12">
+                                    <h1 id="headline-600-12-2" class="ct-headline slider_sl_header" data-id="headline-600-12"><span id="span-601-12-2" class="ct-span" data-id="span-601-12">Trapsoul Vol. 2</span></h1>
+                                    <div id="" class="ct-text-block slider_sl_author"><span id="span-603-12-2" class="ct-span" data-id="span-603-12">digilulu.com</span></div>
+                                    <div id="" class="ct-text-block slider_sl_content"><span id="" class="ct-span oxy-stock-content-styles"><p>Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol. 2.</p></span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="" class="ct-div-block swiper-slide">
+                            <div id="new_columns-596-12-3" class="ct-new-columns slider_sl_block" data-id="new_columns-596-12">
+                                <div id="div_block-597-12-3" class="ct-div-block slider_sl_feat_img_block" data-id="div_block-597-12"><img id="image-598-12-3" alt="" src="files/uploads/71RLkNIuZNL._SY355_-300x300.jpg" class="ct-image slider_sl_feat_img" srcset="files/uploads/71RLkNIuZNL._SY355_-300x300.jpg 300w, files/uploads/71RLkNIuZNL._SY355_-150x150.jpg 150w"
+                                    sizes="(max-width: 300px) 100vw, 300px" data-id="image-598-12"></div>
+                                <div id="div_block-599-12-3" class="ct-div-block slider_sl_feat_text_block" data-id="div_block-599-12">
+                                    <h1 id="headline-600-12-3" class="ct-headline slider_sl_header" data-id="headline-600-12"><span id="span-601-12-3" class="ct-span" data-id="span-601-12">Trapsoul Vol. 3</span></h1>
+                                    <div id="" class="ct-text-block slider_sl_author"><span id="span-603-12-3" class="ct-span" data-id="span-603-12">digilulu.com</span></div>
+                                    <div id="" class="ct-text-block slider_sl_content"><span id="" class="ct-span oxy-stock-content-styles"><p>Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol. 3.</p></span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="" class="ct-div-block swiper-slide">
+                            <div id="new_columns-596-12-4" class="ct-new-columns slider_sl_block" data-id="new_columns-596-12">
+                                <div id="div_block-597-12-4" class="ct-div-block slider_sl_feat_img_block" data-id="div_block-597-12"><img id="image-598-12-4" alt="" src="files/uploads/71RLkNIuZNL._SY355_-300x300.jpg" class="ct-image slider_sl_feat_img" srcset="files/uploads/71RLkNIuZNL._SY355_-300x300.jpg 300w, files/uploads/71RLkNIuZNL._SY355_-150x150.jpg 150w"
+                                    sizes="(max-width: 300px) 100vw, 300px" data-id="image-598-12"></div>
+                                <div id="div_block-599-12-4" class="ct-div-block slider_sl_feat_text_block" data-id="div_block-599-12">
+                                    <h1 id="headline-600-12-4" class="ct-headline slider_sl_header" data-id="headline-600-12"><span id="span-601-12-4" class="ct-span" data-id="span-601-12">Trapsoul Vol. 4</span></h1>
+                                    <div id="" class="ct-text-block slider_sl_author"><span id="span-603-12-4" class="ct-span" data-id="span-603-12">digilulu.com</span></div>
+                                    <div id="" class="ct-text-block slider_sl_content"><span id="" class="ct-span oxy-stock-content-styles"><p>Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1.</p></span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="" class="ct-div-block swiper-slide">
+                            <div id="new_columns-596-12-5" class="ct-new-columns slider_sl_block" data-id="new_columns-596-12">
+                                <div id="div_block-597-12-5" class="ct-div-block slider_sl_feat_img_block" data-id="div_block-597-12"><img id="image-598-12-5" alt="" src="files/uploads/71RLkNIuZNL._SY355_-300x300.jpg" class="ct-image slider_sl_feat_img" srcset="files/uploads/71RLkNIuZNL._SY355_-300x300.jpg 300w, files/uploads/71RLkNIuZNL._SY355_-150x150.jpg 150w"
+                                    sizes="(max-width: 300px) 100vw, 300px" data-id="image-598-12"></div>
+                                <div id="div_block-599-12-5" class="ct-div-block slider_sl_feat_text_block" data-id="div_block-599-12">
+                                    <h1 id="headline-600-12-5" class="ct-headline slider_sl_header" data-id="headline-600-12"><span id="span-601-12-5" class="ct-span" data-id="span-601-12">Trapsoul Vol. 5</span></h1>
+                                    <div id="" class="ct-text-block slider_sl_author"><span id="span-603-12-5" class="ct-span" data-id="span-603-12">digilulu.com</span></div>
+                                    <div id="" class="ct-text-block slider_sl_content"><span id="" class="ct-span oxy-stock-content-styles"><p>Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol. 5.</p></span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="" class="ct-div-block swiper-slide">
+                            <div id="new_columns-596-12-6" class="ct-new-columns slider_sl_block" data-id="new_columns-596-12">
+                                <div id="div_block-597-12-6" class="ct-div-block slider_sl_feat_img_block" data-id="div_block-597-12"><img id="image-598-12-6" alt="" src="files/uploads/71RLkNIuZNL._SY355_-300x300.jpg" class="ct-image slider_sl_feat_img" srcset="files/uploads/71RLkNIuZNL._SY355_-300x300.jpg 300w, files/uploads/71RLkNIuZNL._SY355_-150x150.jpg 150w"
+                                    sizes="(max-width: 300px) 100vw, 300px" data-id="image-598-12"></div>
+                                <div id="div_block-599-12-6" class="ct-div-block slider_sl_feat_text_block" data-id="div_block-599-12">
+                                    <h1 id="headline-600-12-6" class="ct-headline slider_sl_header" data-id="headline-600-12"><span id="span-601-12-6" class="ct-span" data-id="span-601-12">Trapsoul Vol. 6</span></h1>
+                                    <div id="" class="ct-text-block slider_sl_author"><span id="span-603-12-6" class="ct-span" data-id="span-603-12">digilulu.com</span></div>
+                                    <div id="" class="ct-text-block slider_sl_content"><span id="" class="ct-span oxy-stock-content-styles"><p>Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1.</p></span></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="" class=" ct-section section_base_nor padding30t">
+        <div class="ct-section-inner-wrap">
+            <div id="_tabs-1007-12" class="oxy-tabs-wrapper oxy-tabs" data-oxy-tabs-active-tab-class="tabs-5451-tab-active" data-oxy-tabs-contents-wrapper="_tabs_contents-1014-12">
+                <div id="_tab-1008-12" class="oxy-tab tabs-5451-tab tabs-5451-tab-active">
+                    <div id="text_block-1011-12" class="ct-text-block">Map Style #1</div>
+                </div>
+                <div id="_tab-1009-12" class="oxy-tab tabs-5451-tab tabs-5451-tab-active">
+                    <div id="text_block-1012-12" class="ct-text-block">Map Style #2</div>
+                </div>
+                <div id="_tab-1010-12" class="oxy-tab tabs-5451-tab tabs-5451-tab-active">
+                    <div id="text_block-1013-12" class="ct-text-block">Map Style #3</div>
+                </div>
+            </div>
+            <div id="_tabs_contents-1014-12" class="oxy-tabs-contents-wrapper oxy-tabs-contents">
+                <div id="_tab_content-1015-12" class="oxy-tab-content tabs-contents-5451-tab  oxy-tabs-contents-content-hidden">
+                    <div id="code_block-1021-12" class="ct-code-block">
+                        <div class="embed-container maps">
+                            <iframe id="Map1s" style="border:0; width:1280px; height:544px;" src="https://openmaptiles.github.io/maptiler-toner-gl-style/#16.24/38.9871/-94.668162/-48.8/29"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div id="_tab_content-1016-12" class="oxy-tab-content tabs-contents-5451-tab  oxy-tabs-contents-content-hidden">
+                    <div id="code_block-1025-12" class="ct-code-block">
+                        <iframe style="border:0; width:1280px; height:544px;" src="https://api.mapbox.com/styles/v1/samjco/cltmghfmz02cm01p0d9pi4eul.html?title=false&access_token=pk.eyJ1Ijoic2FtamNvIiwiYSI6ImNqMDNpdjJnZTA3ODkyd29sbGNnc3c2bnEifQ.JbS2KDjJ1p05CBcha3Q8Dw&zoomwheel=false#16.17/38.9871/-94.668162/0/67"
+                        title="Untitled">
+                        </iframe>
+
+                    </div>
+                </div>
+                <div id="_tab_content-1017-12" class="oxy-tab-content tabs-contents-5451-tab  oxy-tabs-contents-content-hidden">
+                    <div id="code_block-1029-12" class="ct-code-block">
+                        <iframe style="border:0; width:1280px; height:544px;" src="https://api.mapbox.com/styles/v1/mapbox/navigation-night-v1.html?access_token=pk.eyJ1IjoiZXhhbXBsZXMiLCJhIjoiY2p0MG01MXRqMW45cjQzb2R6b2ptc3J4MSJ9.zA2W0IkI0c6KaAhJfk9bWg#16.48/38.986097/-94.668403/-29.3/65"></iframe>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+                var firstTab = document.querySelector('#_tabs_contents-1014-12 > .oxy-tabs-contents-content-hidden:first-child');
+                if (firstTab && firstTab.classList) {
+                    firstTab.classList.remove("oxy-tabs-contents-content-hidden")
+                };
+            </script>
+        </div>
+    </section>
+    <section id="" class=" ct-section section_base_nor">
+        <div class="ct-section-inner-wrap">
+            <div id="_section_contact_cols" class="ct-new-columns section_contact_cols">
+                <div id="" class="ct-div-block bg_white contact_block_l">
+                    <h3 id="headline-1165-12" class="ct-headline about_headine release_headline text_dark">Get in Touch<br></h3>
+                    <div id="text_block-1232-12" class="ct-text-block contact_text">New albums every single month, check out the newest &amp; best from Snyder Recording artist, now available on Apple Music &amp; Spotify.</div>
+                    <div id="shortcode-1163-12" class="ct-shortcode">
+                        <form action="https://digilulu.com/wp-json/ws-form/v1/submit" class="wsf-form wsf-form-canvas" id="ws-form-1" data-id="1" data-instance-id="1" method="POST"></form>
+                    </div>
+                </div>
+                <div id="_contact_col_2" class="ct-div-block contact_col_2"></div>
+            </div>
+        </div>
+    </section>
+    <section id="" class=" ct-section section_base_nor bg_blue padding75">
+        <div class="ct-section-inner-wrap">
+            <div id="_footer_cols" class="ct-new-columns footer_cols">
+                <div id="div_block-733-12" class="ct-div-block">
+                    <img id="image_logo_below" alt="" src="files/uploads/asset-11.svg" class="ct-image">
+                    <div id="text_block-742-12" class="ct-text-block text_white">8521 W Fairfax Rd
+                        <br>Los Angeles, CA</div>
+                    <div id="text_block-854-12" class="ct-text-block text_white">990210
+                        <br>(909) 505 4302</div>
+                </div>
+                <div id="div_block-928-12" class="ct-div-block">
+                    <div id="text_block-929-12" class="ct-text-block text_white footer_header">EXPORE</div>
+                    <a id="link_text-930-12" class="ct-link-text footer_link_text" href="#" target="_self">About Us</a><a id="link_text-931-12" class="ct-link-text footer_link_text" href="#" target="_self">Our Story</a><a id="link_text-932-12" class="ct-link-text footer_link_text"
+                    href="#" target="_self">Team</a><a id="link_text-933-12" class="ct-link-text footer_link_text" href="#" target="_self">Careers</a><a id="link_text-934-12" class="ct-link-text footer_link_text" href="#" target="_self">FAQ</a>
+                </div>
+                <div id="div_9872" class="ct-div-block ">
+                    <div id="text_block-739-12" class="ct-text-block text_white footer_header">MUSIC</div>
+                    <a id="link_text-756-12" class="ct-link-text footer_link_text" href="#" target="_self">Missing Out</a><a id="link_text-836-12" class="ct-link-text footer_link_text" href="#" target="_self">Trapsoul</a><a id="link_text-837-12" class="ct-link-text footer_link_text"
+                    href="#" target="_self">Sonder Sons</a><a id="link_text-754-12" class="ct-link-text footer_link_text" href="#" target="_self">Paradise Today</a><a id="link_text-755-12" class="ct-link-text footer_link_text" href="#" target="_self">Needed</a>
+                </div>
+                <div id="div_block-736-12" class="ct-div-block padding20l">
+                    <div id="text_block-744-12" class="ct-text-block text_white footer_header">ARTISTS</div>
+                    <a id="link_text-764-12" class="ct-link-text footer_link_text" href="#" target="_self">Brent Faiyaz</a><a id="link_text-838-12" class="ct-link-text footer_link_text" href="#" target="_self">Drake</a><a id="link_text-839-12" class="ct-link-text footer_link_text"
+                    href="#" target="_self">Bryson Ford</a><a id="link_text-840-12" class="ct-link-text footer_link_text" href="#" target="_self">Young Ford</a><a id="link_text-841-12" class="ct-link-text footer_link_text" href="#" target="_self">Roy Fresco</a>
+                </div>
+                <div id="div_block-738-12" class="ct-div-block">
+                    <div id="text_block-743-12" class="ct-text-block text_white footer_header">RECORDS</div>
+                    <a id="link_text-753-12" class="ct-link-text footer_link_text" href="#" target="_self">What a Time</a><a id="link_text-842-12" class="ct-link-text footer_link_text" href="#" target="_self">Coming Home</a><a id="link_text-843-12" class="ct-link-text footer_link_text"
+                    href="#" target="_self">Always First</a><a id="link_text-844-12" class="ct-link-text footer_link_text" href="#" target="_self">So Far Gone</a><a id="link_text-845-12" class="ct-link-text footer_link_text" href="#" target="_self">Big Bluez</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="" class=" ct-section section_base_nor bg_blue padding25t_b">
+        <div class="ct-section-inner-wrap">
+            <div id="footer2_cols" class="ct-new-columns footer_cols">
+                <div id="div_block-1319-12" class="ct-div-block">
+                    <a id="link_text-1334-12" class="ct-link-text footer_link_text margin10r" href="#" target="_self">Privacy Policy</a><a id="link_text-1336-12" class="ct-link-text footer_link_text" href="#" target="_self">Terms &amp; Conditions</a>
+                </div>
+                <div id="div_block-1326-12" class="ct-div-block">
+                    <div id="fancy_icon-1341-12" class="ct-fancy-icon margin20r">
+                        <svg id="svg-fancy_icon-1341-12">
+                            <use xlink:href="#FontAwesomeicon-instagram"></use>
+                        </svg>
+                    </div>
+                    <div id="fancy_icon-1340-12" class="ct-fancy-icon margin20r">
+                        <svg id="svg-fancy_icon-1340-12">
+                            <use xlink:href="#FontAwesomeicon-youtube-play"></use>
+                        </svg>
+                    </div>
+                    <div id="fancy_icon-1339-12" class="ct-fancy-icon margin20r">
+                        <svg id="svg-fancy_icon-1339-12">
+                            <use xlink:href="#FontAwesomeicon-twitter"></use>
+                        </svg>
+                    </div>
+                    <div id="fancy_icon-1338-12" class="ct-fancy-icon">
+                        <svg id="svg-fancy_icon-1338-12">
+                            <use xlink:href="#FontAwesomeicon-facebook"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- WP_FOOTER -->
+
+    <?xml version="1.0"?>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1">
+            <defs>
+                <symbol id="FontAwesomeicon-arrow-circle-o-down" viewbox="0 0 24 28">
+                    <title>arrow-circle-o-down</title>
+                    <path d="M17.5 14.5c0 0.141-0.063 0.266-0.156 0.375l-4.984 4.984c-0.109 0.094-0.234 0.141-0.359 0.141s-0.25-0.047-0.359-0.141l-5-5c-0.141-0.156-0.187-0.359-0.109-0.547s0.266-0.313 0.469-0.313h3v-5.5c0-0.281 0.219-0.5 0.5-0.5h3c0.281 0 0.5 0.219 0.5 0.5v5.5h3c0.281 0 0.5 0.219 0.5 0.5zM12 5.5c-4.688 0-8.5 3.813-8.5 8.5s3.813 8.5 8.5 8.5 8.5-3.813 8.5-8.5-3.813-8.5-8.5-8.5zM24 14c0 6.625-5.375 12-12 12s-12-5.375-12-12 5.375-12 12-12v0c6.625 0 12 5.375 12 12z"></path>
+                </symbol>
+                <symbol id="FontAwesomeicon-twitter" viewbox="0 0 26 28">
+                    <title>twitter</title>
+                    <path d="M25.312 6.375c-0.688 1-1.547 1.891-2.531 2.609 0.016 0.219 0.016 0.438 0.016 0.656 0 6.672-5.078 14.359-14.359 14.359-2.859 0-5.516-0.828-7.75-2.266 0.406 0.047 0.797 0.063 1.219 0.063 2.359 0 4.531-0.797 6.266-2.156-2.219-0.047-4.078-1.5-4.719-3.5 0.313 0.047 0.625 0.078 0.953 0.078 0.453 0 0.906-0.063 1.328-0.172-2.312-0.469-4.047-2.5-4.047-4.953v-0.063c0.672 0.375 1.453 0.609 2.281 0.641-1.359-0.906-2.25-2.453-2.25-4.203 0-0.938 0.25-1.797 0.688-2.547 2.484 3.062 6.219 5.063 10.406 5.281-0.078-0.375-0.125-0.766-0.125-1.156 0-2.781 2.25-5.047 5.047-5.047 1.453 0 2.766 0.609 3.687 1.594 1.141-0.219 2.234-0.641 3.203-1.219-0.375 1.172-1.172 2.156-2.219 2.781 1.016-0.109 2-0.391 2.906-0.781z"></path>
+                </symbol>
+                <symbol id="FontAwesomeicon-facebook" viewbox="0 0 16 28">
+                    <title>facebook</title>
+                    <path d="M14.984 0.187v4.125h-2.453c-1.922 0-2.281 0.922-2.281 2.25v2.953h4.578l-0.609 4.625h-3.969v11.859h-4.781v-11.859h-3.984v-4.625h3.984v-3.406c0-3.953 2.422-6.109 5.953-6.109 1.687 0 3.141 0.125 3.563 0.187z"></path>
+                </symbol>
+                <symbol id="FontAwesomeicon-youtube-play" viewbox="0 0 28 28">
+                    <title>youtube-play</title>
+                    <path d="M11.109 17.625l7.562-3.906-7.562-3.953v7.859zM14 4.156c5.891 0 9.797 0.281 9.797 0.281 0.547 0.063 1.75 0.063 2.812 1.188 0 0 0.859 0.844 1.109 2.781 0.297 2.266 0.281 4.531 0.281 4.531v2.125s0.016 2.266-0.281 4.531c-0.25 1.922-1.109 2.781-1.109 2.781-1.062 1.109-2.266 1.109-2.812 1.172 0 0-3.906 0.297-9.797 0.297v0c-7.281-0.063-9.516-0.281-9.516-0.281-0.625-0.109-2.031-0.078-3.094-1.188 0 0-0.859-0.859-1.109-2.781-0.297-2.266-0.281-4.531-0.281-4.531v-2.125s-0.016-2.266 0.281-4.531c0.25-1.937 1.109-2.781 1.109-2.781 1.062-1.125 2.266-1.125 2.812-1.188 0 0 3.906-0.281 9.797-0.281v0z"></path>
+                </symbol>
+                <symbol id="FontAwesomeicon-instagram" viewbox="0 0 24 28">
+                    <title>instagram</title>
+                    <path d="M16 14c0-2.203-1.797-4-4-4s-4 1.797-4 4 1.797 4 4 4 4-1.797 4-4zM18.156 14c0 3.406-2.75 6.156-6.156 6.156s-6.156-2.75-6.156-6.156 2.75-6.156 6.156-6.156 6.156 2.75 6.156 6.156zM19.844 7.594c0 0.797-0.641 1.437-1.437 1.437s-1.437-0.641-1.437-1.437 0.641-1.437 1.437-1.437 1.437 0.641 1.437 1.437zM12 4.156c-1.75 0-5.5-0.141-7.078 0.484-0.547 0.219-0.953 0.484-1.375 0.906s-0.688 0.828-0.906 1.375c-0.625 1.578-0.484 5.328-0.484 7.078s-0.141 5.5 0.484 7.078c0.219 0.547 0.484 0.953 0.906 1.375s0.828 0.688 1.375 0.906c1.578 0.625 5.328 0.484 7.078 0.484s5.5 0.141 7.078-0.484c0.547-0.219 0.953-0.484 1.375-0.906s0.688-0.828 0.906-1.375c0.625-1.578 0.484-5.328 0.484-7.078s0.141-5.5-0.484-7.078c-0.219-0.547-0.484-0.953-0.906-1.375s-0.828-0.688-1.375-0.906c-1.578-0.625-5.328-0.484-7.078-0.484zM24 14c0 1.656 0.016 3.297-0.078 4.953-0.094 1.922-0.531 3.625-1.937 5.031s-3.109 1.844-5.031 1.937c-1.656 0.094-3.297 0.078-4.953 0.078s-3.297 0.016-4.953-0.078c-1.922-0.094-3.625-0.531-5.031-1.937s-1.844-3.109-1.937-5.031c-0.094-1.656-0.078-3.297-0.078-4.953s-0.016-3.297 0.078-4.953c0.094-1.922 0.531-3.625 1.937-5.031s3.109-1.844 5.031-1.937c1.656-0.094 3.297-0.078 4.953-0.078s3.297-0.016 4.953 0.078c1.922 0.094 3.625 0.531 5.031 1.937s1.844 3.109 1.937 5.031c0.094 1.656 0.078 3.297 0.078 4.953z"></path>
+                </symbol>
+            </defs>
+        </svg>
+        <?xml version="1.0"?>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1">
+                <defs>
+                    <symbol id="Lineariconsicon-cross" viewbox="0 0 20 20">
+                        <title>cross</title>
+                        <path class="path1" d="M10.707 10.5l5.646-5.646c0.195-0.195 0.195-0.512 0-0.707s-0.512-0.195-0.707 0l-5.646 5.646-5.646-5.646c-0.195-0.195-0.512-0.195-0.707 0s-0.195 0.512 0 0.707l5.646 5.646-5.646 5.646c-0.195 0.195-0.195 0.512 0 0.707 0.098 0.098 0.226 0.146 0.354 0.146s0.256-0.049 0.354-0.146l5.646-5.646 5.646 5.646c0.098 0.098 0.226 0.146 0.354 0.146s0.256-0.049 0.354-0.146c0.195-0.195 0.195-0.512 0-0.707l-5.646-5.646z"></path>
+                    </symbol>
+                    <symbol id="Lineariconsicon-menu" viewbox="0 0 20 20">
+                        <title>menu</title>
+                        <path class="path1" d="M17.5 6h-15c-0.276 0-0.5-0.224-0.5-0.5s0.224-0.5 0.5-0.5h15c0.276 0 0.5 0.224 0.5 0.5s-0.224 0.5-0.5 0.5z"></path>
+                        <path class="path2" d="M17.5 11h-15c-0.276 0-0.5-0.224-0.5-0.5s0.224-0.5 0.5-0.5h15c0.276 0 0.5 0.224 0.5 0.5s-0.224 0.5-0.5 0.5z"></path>
+                        <path class="path3" d="M17.5 16h-15c-0.276 0-0.5-0.224-0.5-0.5s0.224-0.5 0.5-0.5h15c0.276 0 0.5 0.224 0.5 0.5s-0.224 0.5-0.5 0.5z"></path>
+                    </symbol>
+                </defs>
+            </svg>
+       
+        <script type="text/javascript" src="files/js/custom_js_functions.js" id="oxygen-aos-js"></script>
+        <script type="text/javascript" src="files/addons/oxygen/component-framework/vendor/aos/aos.js?ver=1" id="oxygen-aos-js"></script>
+
+            
+
+
+            <script type="text/javascript" id="ct_code_block_js_560">
+                //** Oxygen Composite Elements Settings Section **//
+                //** Edit the variables below to change the behavior of the element. **//
+
+                var delay = 4000; // Change this to change the auto-play speed of the slider.
+                var transition = 'slide'; // Tranisition effect. Could be "slide", "cube", "coverflow" or "flip"
+
+                /** That's it, stop editing. **/
+
+                jQuery(document).ready(function() {
+
+                    // var pagination = '<div class="swiper-pagination"><\/div>';
+                    var prevnext = '<div class="nav_box"><div class="swiper-button-prev"><\/div><div class="swiper-button-next"><\/div><\/div>';
+
+                    // jQuery('.swiper-container').append(pagination);
+                    jQuery('.swiper-container').append(prevnext);
+
+                    if (typeof Swiper == 'undefined') {
+                        return;
+                    }
+
+                    var swiper = new Swiper('.swiper-container', {
+
+                        // slidesPerView: 1,
+                        slidesPerView: "auto",
+                        spaceBetween: 0,
+                        initialSlide: 2,
+                        centeredSlides: true,
+                        // freeMode: true,
+                        // centeredSlidesBounds: true,
+                        grabCursor: true,
+                        // slidesPerGroup: 1,
+
+                        // loop: true,
+                        //  loopedSlides: 7,
+                        watchSlidesVisibility: true,
+                        // watchSlidesProgress: true,
+                        breakpoints: {
+
+                            1028: {
+                                slidesPerView: 3,
+                                spaceBetween: 30,
+                            },
+                            768: {
+                                slidesPerView: 1,
+                                spaceBetween: 10,
+                            }
+                        },
+
+                        pagination: {
+                            el: '.swiper-pagination',
+                            clickable: true,
+                        },
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        },
+                        autoplay: {
+                            delay: delay,
+                            disableOnInteraction: true,
+                        },
+                        noSwiping: false,
+                        effect: transition
+                    });
+
+
+
+
+                });
+            </script>
+            <script type="text/javascript" id="ct_code_block_js_1021">
+                jQuery('.maps').click(function() {
+                    jQuery('.maps iframe').css("pointer-events", "auto");
+                });
+
+                jQuery(".maps").mouseleave(function() {
+                    jQuery('.maps iframe').css("pointer-events", "none");
+                });
+            </script>
+
+<script type="text/javascript" src="files/addons/ws-form-pro/shared/js/ws-form.min.js?ver=1.9.172" id="ws-form-form-common-js"></script>
+<script type="text/javascript" src="files/addons/ws-form-pro/public/js/ws-form-public.min.js?ver=1.9.172" id="ws-form-form-public-js"></script>
+<script type="text/javascript" src="files/addons/ws-form-pro/wsform.js" id="wsf-wp-footer"></script>
+
+ <!-- /WP_FOOTER -->
+</body>
+
+</html>

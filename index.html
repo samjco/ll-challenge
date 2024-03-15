@@ -13,8 +13,8 @@
     <link rel="stylesheet" id="oxygen-css" href="files/css/oxygen.css?ver=4.8.1" type="text/css" media="all">
     <link rel="stylesheet" id="aos-css" href="files/addons/aos/aos.css?ver=6.4.3" type="text/css" media="all">
     <script type="text/javascript" src="files/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
-    <link rel="stylesheet" id="cache-12-css" href="files/css/12.css?cache=1710486341#038;ver=6.4.3" type="text/css" media="all">
-    <link rel="stylesheet" id="cache-custom-styles-css" href="files/css/custom.css?cache=1710486339#038;ver=6.4.3" type="text/css" media="all">
+    <link rel="stylesheet" id="12-css" href="files/css/12.css" type="text/css" media="all">
+    <link rel="stylesheet" id="custom-styles-css" href="files/css/custom.css" type="text/css" media="all">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
     <link rel="stylesheet" href="files/addons/ws-form-pro/wsform.css">
 
@@ -467,95 +467,90 @@
                 </defs>
             </svg>
        
-        <script type="text/javascript" src="files/js/custom_js_functions.js" id="oxygen-aos-js"></script>
-        <script type="text/javascript" src="files/addons/oxygen/component-framework/vendor/aos/aos.js?ver=1" id="oxygen-aos-js"></script>
+    <script type="text/javascript" src="files/js/custom_js_functions.js" id="oxygen-aos-js"></script>
+    <script type="text/javascript" src="files/addons/oxygen/component-framework/vendor/aos/aos.js?ver=1" id="oxygen-aos-js"></script>
 
-            
+    <script type="text/javascript" id="ct_code_block_js_560">
+        //** Oxygen Composite Elements Settings Section **//
+        //** Edit the variables below to change the behavior of the element. **//
 
+        var delay = 4000; // Change this to change the auto-play speed of the slider.
+        var transition = 'slide'; // Tranisition effect. Could be "slide", "cube", "coverflow" or "flip"
 
-            <script type="text/javascript" id="ct_code_block_js_560">
-                //** Oxygen Composite Elements Settings Section **//
-                //** Edit the variables below to change the behavior of the element. **//
+        /** That's it, stop editing. **/
 
-                var delay = 4000; // Change this to change the auto-play speed of the slider.
-                var transition = 'slide'; // Tranisition effect. Could be "slide", "cube", "coverflow" or "flip"
+        jQuery(document).ready(function() {
 
-                /** That's it, stop editing. **/
+            // var pagination = '<div class="swiper-pagination"><\/div>';
+            var prevnext = '<div class="nav_box"><div class="swiper-button-prev"><\/div><div class="swiper-button-next"><\/div><\/div>';
 
-                jQuery(document).ready(function() {
+            // jQuery('.swiper-container').append(pagination);
+            jQuery('.swiper-container').append(prevnext);
 
-                    // var pagination = '<div class="swiper-pagination"><\/div>';
-                    var prevnext = '<div class="nav_box"><div class="swiper-button-prev"><\/div><div class="swiper-button-next"><\/div><\/div>';
+            if (typeof Swiper == 'undefined') {
+                return;
+            }
 
-                    // jQuery('.swiper-container').append(pagination);
-                    jQuery('.swiper-container').append(prevnext);
+            var swiper = new Swiper('.swiper-container', {
 
-                    if (typeof Swiper == 'undefined') {
-                        return;
+                // slidesPerView: 1,
+                slidesPerView: "auto",
+                spaceBetween: 0,
+                initialSlide: 2,
+                centeredSlides: true,
+                // freeMode: true,
+                // centeredSlidesBounds: true,
+                grabCursor: true,
+                // slidesPerGroup: 1,
+
+                // loop: true,
+                //  loopedSlides: 7,
+                watchSlidesVisibility: true,
+                // watchSlidesProgress: true,
+                breakpoints: {
+
+                    1028: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    },
+                    768: {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
                     }
+                },
 
-                    var swiper = new Swiper('.swiper-container', {
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                autoplay: {
+                    delay: delay,
+                    disableOnInteraction: true,
+                },
+                noSwiping: false,
+                effect: transition
+            });
 
-                        // slidesPerView: 1,
-                        slidesPerView: "auto",
-                        spaceBetween: 0,
-                        initialSlide: 2,
-                        centeredSlides: true,
-                        // freeMode: true,
-                        // centeredSlidesBounds: true,
-                        grabCursor: true,
-                        // slidesPerGroup: 1,
+        });
+    </script>
 
-                        // loop: true,
-                        //  loopedSlides: 7,
-                        watchSlidesVisibility: true,
-                        // watchSlidesProgress: true,
-                        breakpoints: {
+    <script type="text/javascript" id="ct_code_block_js_1021">
+        jQuery('.maps').click(function() {
+            jQuery('.maps iframe').css("pointer-events", "auto");
+        });
 
-                            1028: {
-                                slidesPerView: 3,
-                                spaceBetween: 30,
-                            },
-                            768: {
-                                slidesPerView: 1,
-                                spaceBetween: 10,
-                            }
-                        },
+        jQuery(".maps").mouseleave(function() {
+            jQuery('.maps iframe').css("pointer-events", "none");
+        });
+    </script>
 
-                        pagination: {
-                            el: '.swiper-pagination',
-                            clickable: true,
-                        },
-                        navigation: {
-                            nextEl: '.swiper-button-next',
-                            prevEl: '.swiper-button-prev',
-                        },
-                        autoplay: {
-                            delay: delay,
-                            disableOnInteraction: true,
-                        },
-                        noSwiping: false,
-                        effect: transition
-                    });
-
-
-
-
-                });
-            </script>
-            <script type="text/javascript" id="ct_code_block_js_1021">
-                jQuery('.maps').click(function() {
-                    jQuery('.maps iframe').css("pointer-events", "auto");
-                });
-
-                jQuery(".maps").mouseleave(function() {
-                    jQuery('.maps iframe').css("pointer-events", "none");
-                });
-            </script>
-
-<script type="text/javascript" src="files/addons/ws-form-pro/shared/js/ws-form.min.js?ver=1.9.172" id="ws-form-form-common-js"></script>
-<script type="text/javascript" src="files/addons/ws-form-pro/public/js/ws-form-public.min.js?ver=1.9.172" id="ws-form-form-public-js"></script>
-<script type="text/javascript" src="files/addons/ws-form-pro/wsform.js" id="wsf-wp-footer"></script>
+    <script type="text/javascript" src="files/addons/ws-form-pro/shared/js/ws-form.min.js?ver=1.9.172" id="ws-form-form-common-js"></script>
+    <script type="text/javascript" src="files/addons/ws-form-pro/public/js/ws-form-public.min.js?ver=1.9.172" id="ws-form-form-public-js"></script>
+    <script type="text/javascript" src="files/addons/ws-form-pro/wsform.js" id="wsf-wp-footer"></script>
 
  <!-- /WP_FOOTER -->
 </body>
